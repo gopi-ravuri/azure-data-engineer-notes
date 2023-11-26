@@ -1,0 +1,6 @@
+Pulling data from an API is a common data engineering task. Here are a few tips to make your API data pipelines resilient.
+
+1. Paginate: The dataset may be too large or the API server only sends a max of n rows.
+2. Cost: Remember the cost of the API calls. Most paid APIs have certain quotas, make sure you are aware of those.
+3. Rate limiting: Do not call the API more than the recommended QPS(see API docs).
+4. Retry on failures: Have a few retries (usually 3) on connection/intermittent failures.
